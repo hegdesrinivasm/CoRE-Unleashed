@@ -1,26 +1,9 @@
 import React from 'react'
-import round2_bg from '../assets/background_about.png'
-import mobile_bg from '../assets/Mobile.png'
 import '../assets/fonts/fonts.css'
 
 const Round2 = () => {
   return (
-    <main
-      className="round2-page"
-      style={{
-        backgroundImage: `url(${round2_bg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <style>{`
-        @media (max-width: 768px) {
-          .round2-page {
-            background-image: url(${mobile_bg}) !important;
-            background-position: top center !important;
-          }
-        }
-      `}</style>
+    <main className="round2-page">
       <section className="round2-content">
         <h2 className="round2-heading">ROUND 2: </h2>
 

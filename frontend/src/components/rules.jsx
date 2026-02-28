@@ -1,26 +1,9 @@
 import React from 'react'
-import desktop_bg from '../assets/background_about.png'
-import mobile_bg from '../assets/Mobile.png'
 import '../assets/fonts/fonts.css'
 
 const Rules = () => {
   return (
-    <main 
-      className="rules-page" 
-      style={{
-        backgroundImage: `url(${desktop_bg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <style>{`
-        @media (max-width: 768px) {
-          .rules-page {
-            background-image: url(${mobile_bg}) !important;
-            background-position: top center !important;
-          }
-        }
-      `}</style>
+    <main className="rules-page">
       <section className="rules-content">
         <h1 className="rules-heading">RULES :</h1>
 
@@ -55,7 +38,14 @@ const Rules = () => {
           </div>
 
           <div className="rules-download">
-            <a href="#" className="rules-download-btn">
+            <a
+              href="#"
+              className="rules-download-btn"
+              onClick={(event) => {
+                event.preventDefault();
+                console.log("Download Template button clicked");
+              }}
+            >
               Download Template
             </a>
           </div>
