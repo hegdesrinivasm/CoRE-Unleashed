@@ -41,32 +41,32 @@ const Home = () => {
       />
 
       <div className="absolute top-0 right-0 flex flex-col sm:flex-row items-end sm:items-start gap-2 sm:gap-4 md:gap-6 pt-2 sm:pt-3 md:pt-4 pr-2 sm:pr-4 md:pr-6 z-10">
-        <div className="w-[4.5em] h-[4.5em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] overflow-hidden flex items-start sm:-translate-y-8 md:-translate-y-10 lg:-translate-y-13 sm:translate-x-15 md:translate-x-20 lg:translate-x-25">
+        <div className="w-[5.5em] h-[5.5em] sm:w-[10em] sm:h-[10em] md:w-[12em] md:h-[12em] lg:w-[14em] lg:h-[14em] overflow-hidden flex items-start sm:-translate-y-8 md:-translate-y-10 lg:-translate-y-13 sm:translate-x-15 md:translate-x-20 lg:translate-x-25">
           <LazyImage
             src={core_logo}
-            className="w-[4.5em] h-[4.5em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] object-cover"
-            alt="Core Logo"
+            className="w-[5.5em] h-[5.5em] sm:w-[10em] sm:h-[10em] md:w-[12em] md:h-[12em] lg:w-[14em] lg:h-[14em] object-cover"
+            alt="CoRE Logo"
             priority={true}
           />
         </div>
-        <div className="w-[4.5em] h-[4.5em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] overflow-hidden flex items-start sm:-translate-y-7 md:-translate-y-9 lg:-translate-y-11 sm:translate-x-3 md:translate-x-4 lg:translate-x-5">
+        <div className="w-[5.5em] h-[5.5em] sm:w-[10em] sm:h-[10em] md:w-[12em] md:h-[12em] lg:w-[14em] lg:h-[14em] overflow-hidden flex items-start sm:-translate-y-7 md:-translate-y-9 lg:-translate-y-11 sm:translate-x-3 md:translate-x-4 lg:translate-x-5">
           <LazyImage
             src={ieee_logo}
-            className="w-[4.5em] h-[4.5em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] object-cover"
+            className="w-[5.5em] h-[5.5em] sm:w-[10em] sm:h-[10em] md:w-[12em] md:h-[12em] lg:w-[14em] lg:h-[14em] object-cover"
             alt="IEEE Logo"
             priority={true}
           />
         </div>
         <LazyImage
           src={vcet_logo}
-          className="w-[4.5em] h-[4.5em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover"
+          className="w-[4.5em] h-[4.5em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover -translate-x-2 sm:-translate-x-1"
           alt="VCET Logo"
           priority={true}
         />
         <LazyImage
           src={codezync_logo}
-          className="w-[4.5em] h-[4.5em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover"
-          alt="CodeZync Logo"
+          className="w-[4.5em] h-[4.5em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover -translate-x-3 sm:-translate-x-1"
+          alt="CodeZyng Logo"
           priority={true}
         />
       </div>
@@ -78,10 +78,10 @@ const Home = () => {
           <img
             src={core_text}
             alt="CoRE"
-            className="w-28 sm:w-32 md:w-36 lg:w-40 mb-0"
+            className="w-32 sm:w-36 md:w-40 lg:w-44 mb-2 sm:mb-3"
           />
           <h1
-            className="text-[#E8B88A] text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[11rem] -mt-1 sm:-mt-2 tracking-wide"
+            className="text-[#E8B88A] text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[11rem] tracking-wide"
             style={{
               fontFamily: "Blowbrush",
               textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
@@ -96,7 +96,7 @@ const Home = () => {
           <button
             className="bg-white text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-gray-100 transition-colors"
             style={{ fontFamily: "Poppins", fontWeight: 700 }}
-            onClick={() => console.log("Download Brochure button clicked")}
+            onClick={() => window.open("https://drive.google.com/file/d/1_8RhqN2ud7jOgF6RCR6AhRcBuWhIibHF/view?usp=sharing", "_blank", "noopener,noreferrer")}
           >
             Download Brochure
           </button>

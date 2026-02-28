@@ -38,16 +38,13 @@ const Rules = () => {
           </div>
 
           <div className="rules-download">
-            <a
-              href="#"
+            <button
+              type="button"
               className="rules-download-btn w-full sm:w-auto text-center"
-              onClick={(event) => {
-                event.preventDefault();
-                console.log("Download Template button clicked");
-              }}
+              onClick={() => window.open('https://drive.google.com/drive/folders/1U5ORbcoDotcQ2NY5GITEy9PhoOjr8lH9?usp=sharing', '_blank', 'noopener,noreferrer')}
             >
               Download Template
-            </a>
+            </button>
           </div>
         </div>
       </section>

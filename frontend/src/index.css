@@ -8,6 +8,13 @@ body,
   margin: 0;
 }
 
+img {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -115,11 +122,13 @@ body,
   background-color: #E8B88A;
   color: #000;
   padding: clamp(0.65rem, 1.2vh, 1rem) clamp(1.5rem, 3vw, 2.5rem);
+  border: none;
+  cursor: pointer;
+  appearance: none;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: clamp(0.9rem, 1.2vw, 1.15rem);
-  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
