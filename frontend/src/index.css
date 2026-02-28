@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Blowbrush';
+  src: url('./assets/Blowbrush.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Rules Page Styles */
+.rules-page {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #000;
+  padding: clamp(2rem, 4vh, 6rem) clamp(1.25rem, 3vw, 4.5rem);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.75;
+}
+
+.rules-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rules-heading {
+  font-family: 'GomariceNoContinue', 'Gomarice', Arial, sans-serif;
+  font-weight: bold;
+  font-size: clamp(2rem, 4vw, 4.5rem);
+  line-height: 1.2;
+  margin-bottom: clamp(1.5rem, 3vh, 3rem);
+  color: #fff;
+}
+
+.rules-section {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 2.5vh, 2.5rem);
+}
+
+.rules-subheading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  line-height: 1.3;
+  margin-bottom: clamp(1rem, 2vh, 1.5rem);
+  color: #E8B88A;
+}
+
+.rules-list ul,
+.rules-pro-tip ul {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 1.5vh, 1.25rem);
+  margin-left: clamp(1rem, 2vw, 2rem);
+  list-style-type: disc;
+}
+
+.rules-list li,
+.rules-pro-tip li {
+  font-size: clamp(0.9rem, 1.2vw, 1.15rem);
+  line-height: 1.8;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.rules-list strong,
+.rules-pro-tip strong {
+  font-weight: 700;
+  color: #E8B88A;
+}
+
+.rules-pro-tip {
+  margin-top: clamp(1rem, 2vh, 1.5rem);
+}
+
+.rules-download {
+  margin-top: clamp(1.5rem, 3vh, 2.5rem);
+}
+
+.rules-download-btn {
+  display: inline-block;
+  background-color: #E8B88A;
+  color: #000;
+  padding: clamp(0.65rem, 1.2vh, 1rem) clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.9rem, 1.2vw, 1.15rem);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.rules-download-btn:hover {
+  background-color: #d9a87b;
+}
+
+/* Round2 Page Styles */
+.round2-page {
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #000;
+  padding: clamp(2rem, 4vh, 6rem) clamp(1.25rem, 3vw, 4.5rem);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.75;
+}
+
+.round2-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.round2-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.3;
+  margin-bottom: clamp(2rem, 3vh, 3rem);
+  color: #E8B88A;
+}
+
+.round2-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vh, 1.5rem);
+  margin-left: clamp(1rem, 2vw, 2rem);
+  list-style-type: disc;
+}
+
+.round2-list li {
+  font-size: clamp(1rem, 1.3vw, 1.25rem);
+  line-height: 1.8;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.round2-list strong {
+  font-weight: 700;
+  color: #E8B88A;
+}
+
+/* Tablet and Mobile Responsiveness */
+@media (max-width: 768px) {
+  .rules-page,
+  .round2-page {
+    padding: clamp(1.5rem, 3vh, 2rem) clamp(1rem, 4vw, 1.5rem);
+  }
+  
+  .rules-content,
+  .round2-content {
+    max-width: 100%;
+  }
+}
