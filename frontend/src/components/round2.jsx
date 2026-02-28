@@ -36,7 +36,7 @@ const Round2 = () => {
             <button
               className="w-full sm:w-auto bg-[#E8B88A] text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-[#d9a87b] transition-colors"
               style={{ fontFamily: 'Poppins', fontWeight: 700 }}
-              onClick={() => console.log('Register Now button clicked')}
+              onClick={() => window.open('https://corevcet.wixsite.com/core/unleashed', '_blank', 'noopener,noreferrer')}
             >
               Register Now
             </button>
