@@ -4,7 +4,7 @@
   --pad-h:     clamp(1.25rem, 3vw, 4.5rem);
 
   position:            relative;
-  min-height:          100vh;
+  height:              100vh;
   box-sizing:          border-box;
   overflow-x:          hidden;
   overflow-y:          auto;

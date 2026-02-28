@@ -15,24 +15,24 @@ const Registration = lazy(() => import("./components/registration"))
 // Main landing page with scrollable sections
 function LandingPage() {
   return (
-    <div className="scroll-smooth">
+    <div className="h-screen overflow-y-auto scroll-smooth snap-y snap-mandatory">
       {/* Section 1 - Home (Load immediately, it's above the fold) */}
-      <section className="bg-black text-white">
+      <section className="snap-start snap-always h-screen bg-black text-white">
         <Home />
       </section>
 
       {/* Section 2 - About CoRE (Lazy load when scrolling) */}
-      <LazySection className="bg-black text-white">
+      <LazySection className="snap-start snap-always h-screen bg-black text-white">
         <AboutCoRE />
       </LazySection>
 
       {/* Section 3 - Rules (Round 1) (Lazy load when scrolling) */}
-      <LazySection>
+      <LazySection className="snap-start snap-always h-screen">
         <Rules />
       </LazySection>
 
       {/* Section 4 - Round 2 (Lazy load when scrolling) */}
-      <LazySection>
+      <LazySection className="snap-start snap-always h-screen">
         <Round2 />
       </LazySection>
     </div>
