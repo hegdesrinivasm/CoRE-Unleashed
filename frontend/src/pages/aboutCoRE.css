@@ -1,19 +1,4 @@
-﻿
-@font-face {
-  font-family: 'no_continue';
-  src: url('../assets/gomarice_no_continue.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GomariceNoContinue';
-  src: url('../assets/gomarice_no_continue.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.about-core-section {
+﻿.about-core-section {
 
   --pad-v:     clamp(2rem, 4vh, 6rem);
   --pad-h:     clamp(1.25rem, 3vw, 4.5rem);
@@ -42,7 +27,7 @@
 }
 
 .about-core-title {
-  font-family:   'GomariceNoContinue', 'no_continue', sans-serif;
+  font-family:   'GomariceNoContinue', sans-serif;
   font-weight:   bold;
   font-size:     clamp(2rem, 4vw, 4.5rem);
   line-height:   1.2;

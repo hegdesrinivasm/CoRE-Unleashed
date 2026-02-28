@@ -18,7 +18,7 @@ const COLORS = {
 
 const FONTS = {
     primary: "Poppins, sans-serif",
-    secondary: "Gomarice, sans-serif"
+    secondary: "GomariceNoContinue, sans-serif"
 };
 
 const COMMON_STYLES = {

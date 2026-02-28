@@ -1,13 +1,9 @@
 @import "tailwindcss";
+@import "./assets/fonts/fonts.css";
 
-@font-face {
-  font-family: 'Blowbrush';
-  src: url('./assets/Blowbrush.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
 }
@@ -35,7 +31,7 @@ html, body, #root {
 }
 
 .rules-heading {
-  font-family: 'GomariceNoContinue', 'Gomarice', Arial, sans-serif;
+  font-family: 'GomariceNoContinue', Arial, sans-serif;
   font-weight: bold;
   font-size: clamp(2rem, 4vw, 4.5rem);
   line-height: 1.2;
@@ -159,11 +155,12 @@ html, body, #root {
 
 /* Tablet and Mobile Responsiveness */
 @media (max-width: 768px) {
+
   .rules-page,
   .round2-page {
     padding: clamp(1.5rem, 3vh, 2rem) clamp(1rem, 4vw, 1.5rem);
   }
-  
+
   .rules-content,
   .round2-content {
     max-width: 100%;

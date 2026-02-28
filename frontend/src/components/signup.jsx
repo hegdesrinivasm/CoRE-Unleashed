@@ -149,7 +149,7 @@ export default function Signup() {
                         fontSize: '32px',
                         fontWeight: 'bold',
                         marginBottom: '40px',
-                        fontFamily: 'Gomarice, sans-serif',
+                        fontFamily: 'GomariceNoContinue, sans-serif',
                         letterSpacing: '2px',
                         textAlign: 'center'
                     }}>
@@ -244,7 +244,7 @@ export default function Signup() {
                                 backgroundColor: '#FFD6AD',
                                 color: 'black',
                                 cursor: 'pointer',
-                                fontFamily: 'Gomarice, sans-serif',
+                                fontFamily: 'GomariceNoContinue, sans-serif',
                                 letterSpacing: '2px',
                                 marginBottom: '30px'
                             }}
