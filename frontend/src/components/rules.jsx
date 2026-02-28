@@ -40,7 +40,7 @@ const Rules = () => {
           <div className="rules-download">
             <a
               href="#"
-              className="rules-download-btn"
+              className="rules-download-btn w-full sm:w-auto text-center"
               onClick={(event) => {
                 event.preventDefault();
                 console.log("Download Template button clicked");

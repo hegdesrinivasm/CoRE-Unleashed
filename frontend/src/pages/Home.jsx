@@ -41,38 +41,38 @@ const Home = () => {
       />
 
       <div className="absolute top-0 right-0 flex flex-col sm:flex-row items-end sm:items-start gap-2 sm:gap-4 md:gap-6 pt-2 sm:pt-3 md:pt-4 pr-2 sm:pr-4 md:pr-6 z-10">
-        <div className="w-[3em] h-[3em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] overflow-hidden flex items-start sm:-translate-y-8 md:-translate-y-10 lg:-translate-y-13 sm:translate-x-15 md:translate-x-20 lg:translate-x-25">
+        <div className="w-[4.5em] h-[4.5em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] overflow-hidden flex items-start sm:-translate-y-8 md:-translate-y-10 lg:-translate-y-13 sm:translate-x-15 md:translate-x-20 lg:translate-x-25">
           <LazyImage
             src={core_logo}
-            className="w-[3em] h-[3em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] object-cover"
+            className="w-[4.5em] h-[4.5em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] object-cover"
             alt="Core Logo"
             priority={true}
           />
         </div>
-        <div className="w-[3em] h-[3em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] overflow-hidden flex items-start sm:-translate-y-7 md:-translate-y-9 lg:-translate-y-11 sm:translate-x-3 md:translate-x-4 lg:translate-x-5">
+        <div className="w-[4.5em] h-[4.5em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] overflow-hidden flex items-start sm:-translate-y-7 md:-translate-y-9 lg:-translate-y-11 sm:translate-x-3 md:translate-x-4 lg:translate-x-5">
           <LazyImage
             src={ieee_logo}
-            className="w-[3em] h-[3em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] object-cover"
+            className="w-[4.5em] h-[4.5em] sm:w-[8em] sm:h-[8em] md:w-[10em] md:h-[10em] lg:w-[12em] lg:h-[12em] object-cover"
             alt="IEEE Logo"
             priority={true}
           />
         </div>
         <LazyImage
           src={vcet_logo}
-          className="w-[3em] h-[3em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover"
+          className="w-[4.5em] h-[4.5em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover"
           alt="VCET Logo"
           priority={true}
         />
         <LazyImage
           src={codezync_logo}
-          className="w-[3em] h-[3em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover"
+          className="w-[4.5em] h-[4.5em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover"
           alt="CodeZync Logo"
           priority={true}
         />
       </div>
 
       {/* Content in lower third */}
-      <div className="absolute bottom-20 sm:bottom-24 md:bottom-28 lg:bottom-32 right-0 z-10 px-6 sm:px-8 md:px-16 lg:px-24">
+      <div className="absolute bottom-28 sm:bottom-24 md:bottom-28 lg:bottom-32 right-0 z-10 px-6 sm:px-8 md:px-16 lg:px-24 md:-translate-x-20 lg:-translate-x-24">
         {/* Core text + UNLEASHED */}
         <div className="flex flex-col items-start mb-4 sm:mb-6 md:mb-8">
           <img
@@ -112,7 +112,7 @@ const Home = () => {
         {/* Date and Location */}
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 lg:gap-8">
           <div className="flex items-center gap-2 sm:gap-3 md:gap-4 max-w-[300px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px]">
-            <span className="material-icons text-white text-xl sm:text-xl md:text-2xl align-middle">
+            <span className="material-icons text-white text-2xl sm:text-2xl md:text-2xl align-middle">
               location_on
             </span>
             <span
@@ -123,7 +123,7 @@ const Home = () => {
             </span>
           </div>
           <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
-            <span className="material-icons text-white text-xl sm:text-xl md:text-2xl align-middle">
+            <span className="material-icons text-white text-2xl sm:text-2xl md:text-2xl align-middle">
               calendar_month
             </span>
             <span
