@@ -41,47 +41,47 @@ const Home = () => {
       />
 
       <div className="absolute top-0 right-0 flex flex-col sm:flex-row items-end sm:items-start gap-2 sm:gap-4 md:gap-6 pt-2 sm:pt-3 md:pt-4 pr-2 sm:pr-4 md:pr-6 z-10">
-        <div className="w-[5.5em] h-[5.5em] sm:w-[10em] sm:h-[10em] md:w-[12em] md:h-[12em] lg:w-[14em] lg:h-[14em] overflow-hidden flex items-start sm:-translate-y-8 md:-translate-y-10 lg:-translate-y-13 sm:translate-x-15 md:translate-x-20 lg:translate-x-25">
+        <div className="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 overflow-hidden flex items-start sm:-translate-y-6 md:-translate-y-8 lg:-translate-y-10 sm:translate-x-10 md:translate-x-14 lg:translate-x-16">
           <LazyImage
             src={core_logo}
-            className="w-[5.5em] h-[5.5em] sm:w-[10em] sm:h-[10em] md:w-[12em] md:h-[12em] lg:w-[14em] lg:h-[14em] object-cover"
+            className="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-cover"
             alt="CoRE Logo"
             priority={true}
           />
         </div>
-        <div className="w-[5.5em] h-[5.5em] sm:w-[10em] sm:h-[10em] md:w-[12em] md:h-[12em] lg:w-[14em] lg:h-[14em] overflow-hidden flex items-start sm:-translate-y-7 md:-translate-y-9 lg:-translate-y-11 sm:translate-x-3 md:translate-x-4 lg:translate-x-5">
+        <div className="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 overflow-hidden flex items-start sm:-translate-y-4 md:-translate-y-6 lg:-translate-y-8 sm:translate-x-1 md:translate-x-2 lg:translate-x-3">
           <LazyImage
             src={ieee_logo}
-            className="w-[5.5em] h-[5.5em] sm:w-[10em] sm:h-[10em] md:w-[12em] md:h-[12em] lg:w-[14em] lg:h-[14em] object-cover"
+            className="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-cover"
             alt="IEEE Logo"
             priority={true}
           />
         </div>
         <LazyImage
           src={vcet_logo}
-          className="w-[4.5em] h-[4.5em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover -translate-x-2 sm:-translate-x-1"
+          className="w-16 h-16 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover -translate-x-2 sm:-translate-x-1"
           alt="VCET Logo"
           priority={true}
         />
         <LazyImage
           src={codezync_logo}
-          className="w-[4.5em] h-[4.5em] sm:w-[4em] sm:h-[4em] md:w-[5em] md:h-[5em] lg:w-[6em] lg:h-[6em] object-cover -translate-x-3 sm:-translate-x-1"
+          className="w-16 h-16 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover -translate-x-4 sm:-translate-x-2"
           alt="CodeZyng Logo"
           priority={true}
         />
       </div>
 
       {/* Content in lower third */}
-      <div className="absolute bottom-28 sm:bottom-24 md:bottom-28 lg:bottom-32 right-0 z-10 px-6 sm:px-8 md:px-16 lg:px-24 md:-translate-x-20 lg:-translate-x-24">
+      <div className="absolute bottom-20 sm:bottom-20 md:bottom-24 lg:bottom-28 left-4 right-4 sm:left-auto sm:right-6 md:right-10 lg:right-16 z-10">
         {/* Core text + UNLEASHED */}
         <div className="flex flex-col items-start mb-4 sm:mb-6 md:mb-8">
           <img
             src={core_text}
             alt="CoRE"
-            className="w-32 sm:w-36 md:w-40 lg:w-44 mb-2 sm:mb-3"
+            className="w-28 sm:w-32 md:w-36 lg:w-40 mb-2 sm:mb-3"
           />
           <h1
-            className="text-[#E8B88A] text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[11rem] tracking-wide"
+            className="text-[#E8B88A] text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] tracking-wide"
             style={{
               fontFamily: "Blowbrush",
               textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
@@ -92,16 +92,16 @@ const Home = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 mb-4 sm:mb-6 md:mb-8">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 mb-4 sm:mb-6 md:mb-8 items-stretch sm:items-start">
           <button
-            className="bg-white text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-gray-100 transition-colors"
+            className="w-full sm:w-auto bg-white text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-gray-100 transition-colors"
             style={{ fontFamily: "Poppins", fontWeight: 700 }}
             onClick={() => window.open("https://drive.google.com/file/d/1_8RhqN2ud7jOgF6RCR6AhRcBuWhIibHF/view?usp=sharing", "_blank", "noopener,noreferrer")}
           >
             Download Brochure
           </button>
           <button
-            className="bg-[#E8B88A] text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-[#d9a87b] transition-colors"
+            className="w-full sm:w-auto bg-[#E8B88A] text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-[#d9a87b] transition-colors"
             style={{ fontFamily: "Poppins", fontWeight: 700 }}
             onClick={() => window.open("https://corevcet.wixsite.com/core/unleashed", "_blank", "noopener,noreferrer")}
           >
