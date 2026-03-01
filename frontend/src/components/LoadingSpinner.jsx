@@ -7,7 +7,7 @@ const LoadingSpinner = () => {
         {/* Spinning circle */}
         <div className="w-16 h-16 border-4 border-gray-700 border-t-[#E8B88A] rounded-full animate-spin"></div>
         {/* Optional text */}
-        <p className="text-white text-center mt-4 font-poppins">Loading...</p>
+        <p className="text-white text-center mt-4" style={{ fontFamily: 'Inter' }}>Loading...</p>
       </div>
     </div>
   );

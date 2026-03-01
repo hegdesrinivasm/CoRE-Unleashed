@@ -1,7 +1,7 @@
 import LazyImage from "../components/LazyImage";
 import { useImagePreloader } from "../utils/preloader";
-import image from "../assets/background_desktop.png";
-import background_mobile from "../assets/background_mobile.png";
+import homeBackgroundLandscape from "../assets/Home Background Landscape.png";
+import homeBackgroundPortrait from "../assets/Home Background Potrait.png";
 import core_logo from "../assets/core_logo.png";
 import ieee_logo from "../assets/ieee_logo.png";
 import vcet_logo from "../assets/vcet_logo.png";
@@ -10,14 +10,14 @@ import core_text from "../assets/core_text.svg";
 
 const Home = () => {
   // Preload critical images for the Home section
-  const criticalImages = [image, background_mobile, core_text];
+  const criticalImages = [homeBackgroundLandscape, homeBackgroundPortrait, core_text];
   const { isLoading } = useImagePreloader(criticalImages);
 
   // Show minimal loading state for critical assets
   if (isLoading) {
     return (
       <div className="relative min-h-screen h-screen overflow-hidden bg-black flex items-center justify-center">
-        <div className="text-[#E8B88A] text-2xl" style={{ fontFamily: "Poppins" }}>
+        <div className="text-[#E8B88A] text-2xl" style={{ fontFamily: "Inter" }}>
           Loading...
         </div>
       </div>
@@ -28,13 +28,13 @@ const Home = () => {
     <div className="relative min-h-screen h-screen overflow-hidden bg-black">
       {/* Background image - mobile version */}
       <img
-        src={background_mobile}
+        src={homeBackgroundPortrait}
         alt="Background"
         className="absolute inset-0 w-full h-screen object-cover sm:hidden"
       />
       {/* Background image - tablet/desktop version with shrinking mechanism */}
       <img
-        src={image}
+        src={homeBackgroundLandscape}
         alt="Background"
         className="hidden sm:block absolute inset-0 w-full h-screen sm:object-cover object-top"
         style={{ objectFit: "fill" }}
@@ -65,7 +65,7 @@ const Home = () => {
         />
         <LazyImage
           src={codezync_logo}
-          className="w-16 h-16 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover -translate-x-4 sm:-translate-x-2"
+          className="w-16 h-16 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-cover -translate-x-3 sm:-translate-x-2"
           alt="CodeZyng Logo"
           priority={true}
         />
@@ -81,9 +81,8 @@ const Home = () => {
             className="w-28 sm:w-32 md:w-36 lg:w-40 mb-2 sm:mb-3"
           />
           <h1
-            className="text-[#E8B88A] text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] tracking-wide"
+            className="unleashed-word text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] tracking-wide"
             style={{
-              fontFamily: "Blowbrush",
               textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
             }}
           >
@@ -95,14 +94,14 @@ const Home = () => {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 mb-4 sm:mb-6 md:mb-8 items-stretch sm:items-start">
           <button
             className="w-full sm:w-auto bg-white text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-gray-100 transition-colors"
-            style={{ fontFamily: "Poppins", fontWeight: 700 }}
-            onClick={() => window.open("https://drive.google.com/file/d/1_8RhqN2ud7jOgF6RCR6AhRcBuWhIibHF/view?usp=sharing", "_blank", "noopener,noreferrer")}
+            style={{ fontFamily: "Inter", fontWeight: 700 }}
+            onClick={() => window.open("https://drive.google.com/file/d/1ezkI6i7L3XjDwt-Vl_ysG9j7-ehV-IbH/view?usp=sharing", "_blank", "noopener,noreferrer")}
           >
             Download Brochure
           </button>
           <button
             className="w-full sm:w-auto bg-[#E8B88A] text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-[#d9a87b] transition-colors"
-            style={{ fontFamily: "Poppins", fontWeight: 700 }}
+            style={{ fontFamily: "Inter", fontWeight: 700 }}
             onClick={() => window.open("https://corevcet.wixsite.com/core/unleashed", "_blank", "noopener,noreferrer")}
           >
             Register Now
@@ -117,7 +116,7 @@ const Home = () => {
             </span>
             <span
               className="text-white text-sm sm:text-base md:text-lg break-words text-left"
-              style={{ fontFamily: "Poppins", fontWeight: 600 }}
+              style={{ fontFamily: "Inter", fontWeight: 600 }}
             >
               Vivekananda College of Engineering & Technology
             </span>
@@ -128,7 +127,7 @@ const Home = () => {
             </span>
             <span
               className="text-white text-sm sm:text-base md:text-lg"
-              style={{ fontFamily: "Poppins", fontWeight: 600 }}
+              style={{ fontFamily: "Inter", fontWeight: 600 }}
             >
               24th - 26th, April 2026
             </span>

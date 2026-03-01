@@ -19,37 +19,38 @@
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./poppins-latin-400-normal.woff2') format('woff2'),
-       url('./poppins-latin-400-normal.woff') format('woff');
+  font-family: 'Inter';
+  src: url('./inter-latin-400-normal.woff2') format('woff2'),
+       url('./inter-latin-400-normal.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: block;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./poppins-latin-600-normal.woff2') format('woff2'),
-       url('./poppins-latin-600-normal.woff') format('woff');
+  font-family: 'Inter';
+  src: url('./inter-latin-500-normal.woff2') format('woff2'),
+       url('./inter-latin-500-normal.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./inter-latin-600-normal.woff2') format('woff2'),
+       url('./inter-latin-600-normal.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: block;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./poppins-latin-700-normal.woff2') format('woff2'),
-       url('./poppins-latin-700-normal.woff') format('woff');
+  font-family: 'Inter';
+  src: url('./inter-latin-700-normal.woff2') format('woff2'),
+       url('./inter-latin-700-normal.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: block;
 }
 
-@font-face {
-  font-family: 'Poppins';
-  src: url('./poppins-latin-900-normal.woff2') format('woff2'),
-       url('./poppins-latin-900-normal.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: block;
-}
