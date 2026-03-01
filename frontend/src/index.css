@@ -93,18 +93,18 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: clamp(0.95rem, 2vh, 1.5rem);
+  gap: clamp(1.1rem, 2.4vh, 1.85rem);
 }
 
 .rules-step-card {
   position: relative;
   display: flex;
   align-items: flex-start;
-  gap: clamp(0.75rem, 1.5vw, 1.1rem);
+  gap: clamp(0.9rem, 1.75vw, 1.25rem);
   border: 1px solid rgba(232, 184, 138, 0.42);
   background: rgba(0, 0, 0, 0.38);
   border-radius: 14px;
-  padding: clamp(0.9rem, 1.8vh, 1.3rem) clamp(0.9rem, 1.6vw, 1.25rem);
+  padding: clamp(1rem, 2.2vh, 1.55rem) clamp(1rem, 1.9vw, 1.55rem);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
   z-index: 2;
   opacity: 0;
@@ -114,8 +114,8 @@ img {
 
 .rules-step-badge {
   flex-shrink: 0;
-  min-width: clamp(2rem, 3vw, 2.5rem);
-  height: clamp(2rem, 3vw, 2.5rem);
+  min-width: clamp(2.15rem, 3.2vw, 2.75rem);
+  height: clamp(2.15rem, 3.2vw, 2.75rem);
   border-radius: 999px;
   border: 1px solid #E8B88A;
   background: rgba(232, 184, 138, 0.14);
@@ -131,8 +131,8 @@ img {
 .rules-step-text {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-size: clamp(1rem, 1.35vw, 1.25rem);
-  line-height: 1.7;
+  font-size: clamp(1.05rem, 1.55vw, 1.4rem);
+  line-height: 1.75;
 }
 
 .rules-step-title {
@@ -529,6 +529,7 @@ img {
 
   .rules-step-card {
     transform: none;
+    width: 100%;
   }
 
   .rules-mobile-connector {
@@ -536,11 +537,9 @@ img {
     align-self: center;
     width: 2px;
     height: clamp(1rem, 2.2vh, 1.35rem);
-    background-image: repeating-linear-gradient(
-      to bottom,
-      rgba(232, 184, 138, 0.92) 0 4px,
-      transparent 4px 8px
-    );
+    background-image: repeating-linear-gradient(to bottom,
+        rgba(232, 184, 138, 0.92) 0 4px,
+        transparent 4px 8px);
     transform-origin: top center;
     opacity: 0;
     transform: scaleY(0);
@@ -564,43 +563,43 @@ img {
   .rules-journey {
     display: block;
     width: 100%;
-    height: clamp(26rem, 58vh, 38rem);
+    height: clamp(30rem, 66vh, 44rem);
     margin-top: clamp(0.25rem, 1vh, 0.75rem);
   }
 
   .rules-step-card {
     position: absolute;
-    width: min(42%, 28rem);
-    min-height: clamp(6.75rem, 11vh, 8.5rem);
+    width: min(43%, 30rem);
+    min-height: clamp(8rem, 13vh, 10.25rem);
     transform: rotate(var(--card-rot, 0deg));
     background: rgba(0, 0, 0, 0.48);
     backdrop-filter: blur(1px);
   }
 
   .rules-step-1 {
-    top: 7%;
+    top: 4%;
     left: 3%;
     --card-rot: -1.6deg;
     animation-delay: 0.36s;
   }
 
   .rules-step-2 {
-    top: 18%;
-    right: 4%;
+    top: 17%;
+    right: 3%;
     --card-rot: 1.35deg;
     animation-delay: 0.98s;
   }
 
   .rules-step-3 {
-    top: 47%;
-    left: 10%;
+    top: 46%;
+    left: 5%;
     --card-rot: -1.15deg;
     animation-delay: 0.12s;
   }
 
   .rules-step-4 {
-    top: 69%;
-    right: 7%;
+    top: 71%;
+    right: 5%;
     --card-rot: 0.9deg;
     animation-delay: 0.68s;
   }
@@ -684,12 +683,25 @@ img {
   animation-delay: 1.05s;
 }
 
+.section6-card-8 {
+  animation-delay: 1.2s;
+}
+
+.section6-card-9 {
+  animation-delay: 1.35s;
+}
+
 .section6-link {
   transition: transform 180ms ease, color 180ms ease;
 }
 
 .section6-link:hover {
   transform: translateX(2px);
+}
+
+.section6-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
 }
 
 .section2-heading {

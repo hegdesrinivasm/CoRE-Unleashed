@@ -53,7 +53,7 @@ function WhatIsUnleashedSection() {
           className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed mb-4 sm:mb-5 section2-copy section2-copy-1"
           style={{ fontFamily: "Inter", fontWeight: 500 }}
         >
-          CoRE <span className="unleashed-word">UNLEASHED</span> is a high-octane 36-hour innovation marathon organized by the Center of Research Excellency (CoRE) in proud collaboration with the IEEE VCET Student Branch and our industry partner, Codezyng.
+          CoRE <span className="unleashed-word">UNLEASHED</span> is a high-octane 36-hour innovation marathon organized by the Center of Research Excellency (CoRE) in proud collaboration with the IEEE VCET Student Branch and our industry partner, CodeZyng.
         </p>
 
         <p
@@ -101,8 +101,8 @@ function ContactAndSocialSection() {
   }, [])
 
   return (
-    <section ref={sectionRef} className="h-full w-full px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-8 md:py-12 text-white overflow-hidden">
-      <div key={animationRun} className="w-full h-full flex flex-col section6-animated">
+    <section ref={sectionRef} className="h-full w-full box-border px-4 sm:px-8 md:px-12 lg:px-16 py-4 sm:py-8 md:py-12 text-white overflow-hidden">
+      <div key={animationRun} className="w-full h-full min-h-0 flex flex-col section6-animated">
         <h2
           className="section-heading-size leading-tight mb-3 sm:mb-5 md:mb-7 section6-heading"
           style={{ fontFamily: 'GomariceNoContinue', fontWeight: 700 }}
@@ -110,7 +110,7 @@ function ContactAndSocialSection() {
           Contact & Socials
         </h2>
 
-        <div className="flex-1 min-h-0 overflow-y-auto space-y-3 sm:space-y-5 pr-1">
+        <div className="section6-scroll flex-1 min-h-0 overflow-y-auto flex flex-col gap-3 sm:gap-5 pr-1">
           <div className="rounded-xl border border-white/20 bg-black/25 p-3 sm:p-5 md:p-6 section6-card section6-card-1">
             <div className="space-y-3 sm:space-y-5" style={{ fontFamily: 'Inter' }}>
               <div className="rounded-lg border border-white/20 bg-black/35 p-3 sm:p-4 section6-card section6-card-2">
@@ -194,6 +194,19 @@ function ContactAndSocialSection() {
               </a>
             </div>
           </div>
+
+          <div className="mt-auto min-h-[220px] md:min-h-[260px]" style={{ fontFamily: 'Inter' }}>
+            <div className="rounded-xl border border-white/20 bg-black/25 p-2 sm:p-3 section6-card section6-card-9 overflow-hidden">
+              <iframe
+                title="VCET Puttur location on Google Maps"
+                src="https://www.google.com/maps?q=Vivekananda+College+of+Engineering+and+Technology+Puttur&output=embed"
+                className="w-full h-full min-h-[200px] rounded-lg border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -248,7 +261,7 @@ function LandingPage() {
       </LazySection>
 
       {/* Section 3 - The UNLEASHED Advantage (Lazy load when scrolling) */}
-      <LazySection className="snap-start snap-always h-[400dvh] event-section-bg text-white relative">
+      <LazySection className="snap-start snap-always h-[320dvh] event-section-bg text-white relative">
         <About scrollContainerRef={scrollContainerRef} />
       </LazySection>
 

@@ -27,7 +27,7 @@ const About = ({ scrollContainerRef }) => {
   const transition = { duration: 0.35, ease: [0.22, 1, 0.36, 1] };
 
   return (
-    <section ref={containerRef} className="relative w-full h-[400dvh]">
+    <section ref={containerRef} className="relative w-full h-[320dvh]">
       <div className="sticky top-0 h-[100dvh] w-full flex flex-col items-center justify-center overflow-hidden">
         <motion.h2
           className="absolute text-center px-4 w-full"

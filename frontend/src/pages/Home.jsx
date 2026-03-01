@@ -109,24 +109,24 @@ const Home = () => {
         </div>
 
         {/* Date and Location */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 lg:gap-8">
-          <div className="flex items-center gap-2 sm:gap-3 md:gap-4 max-w-[300px] sm:max-w-[320px] md:max-w-[380px] lg:max-w-[420px]">
+        <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 items-start">
+          <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
             <span className="material-icons text-white text-2xl sm:text-2xl md:text-2xl align-middle">
               location_on
             </span>
             <span
-              className="text-white text-sm sm:text-base md:text-lg break-words text-left"
+              className="text-white text-sm sm:text-base md:text-lg break-words text-left leading-snug"
               style={{ fontFamily: "Inter", fontWeight: 600 }}
             >
               Vivekananda College of Engineering & Technology
             </span>
           </div>
-          <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
+          <div className="flex items-start gap-2 sm:gap-3 md:gap-4">
             <span className="material-icons text-white text-2xl sm:text-2xl md:text-2xl align-middle">
               calendar_month
             </span>
             <span
-              className="text-white text-sm sm:text-base md:text-lg"
+              className="text-white text-sm sm:text-base md:text-lg leading-snug"
               style={{ fontFamily: "Inter", fontWeight: 600 }}
             >
               24th - 26th, April 2026
