@@ -72,7 +72,7 @@ const Home = () => {
       </div>
 
       {/* Content in lower third */}
-      <div className="absolute bottom-20 sm:bottom-20 md:bottom-24 lg:bottom-28 left-4 right-4 sm:left-auto sm:right-6 md:right-10 lg:right-16 z-10">
+      <div className="absolute bottom-24 sm:bottom-20 md:bottom-24 lg:bottom-28 left-4 right-4 sm:left-auto sm:right-6 md:right-10 lg:right-16 z-10">
         {/* Core text + UNLEASHED */}
         <div className="flex flex-col items-start mb-4 sm:mb-6 md:mb-8">
           <img
