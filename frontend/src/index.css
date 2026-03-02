@@ -61,6 +61,19 @@ img {
   line-height: 1.2;
 }
 
+.home-loading-logo {
+  width: clamp(7rem, 28vw, 13rem);
+  height: auto;
+  animation: homeLogoFloat 1.8s ease-in-out infinite, homeLogoGlow 2.4s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(232, 184, 138, 0.3));
+}
+
+@media (max-width: 768px) {
+  .home-loading-logo {
+    width: clamp(8.5rem, 42vw, 14.5rem);
+  }
+}
+
 /* Rules Page Styles */
 .rules-page {
   position: relative;
@@ -188,6 +201,28 @@ img {
   to {
     opacity: 1;
     transform: translateY(0) scale(1) rotate(var(--card-rot, 0deg));
+  }
+}
+
+@keyframes homeLogoFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-8px) scale(1.03);
+  }
+}
+
+@keyframes homeLogoGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 10px rgba(232, 184, 138, 0.28));
+  }
+
+  50% {
+    filter: drop-shadow(0 0 22px rgba(232, 184, 138, 0.6));
   }
 }
 
@@ -822,6 +857,11 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
+  .home-loading-logo {
+    animation: none;
+    filter: none;
+  }
 
   .section2-heading,
   .section2-copy {

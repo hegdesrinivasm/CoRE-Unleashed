@@ -21,9 +21,11 @@ const Home = () => {
   if (isLoading) {
     return (
       <div className="relative min-h-screen h-screen overflow-hidden bg-black flex items-center justify-center">
-        <div className="text-[#E8B88A] text-2xl" style={{ fontFamily: "Inter" }}>
-          Loading...
-        </div>
+        <img
+          src={core_logo}
+          alt="CoRE Logo"
+          className="home-loading-logo"
+        />
       </div>
     );
   }
