@@ -1,6 +1,10 @@
 import LazyImage from "../components/LazyImage";
 import { useImagePreloader } from "../utils/preloader";
+import homeBackgroundLandscapeAvif from "../assets/Home Background Landscape.avif";
+import homeBackgroundLandscapeWebp from "../assets/Home Background Landscape.webp";
 import homeBackgroundLandscape from "../assets/Home Background Landscape.png";
+import homeBackgroundPortraitAvif from "../assets/Home Background Potrait.avif";
+import homeBackgroundPortraitWebp from "../assets/Home Background Potrait.webp";
 import homeBackgroundPortrait from "../assets/Home Background Potrait.png";
 import core_logo from "../assets/core_logo.png";
 import ieee_logo from "../assets/ieee_logo.png";
@@ -10,7 +14,7 @@ import core_text from "../assets/core_text.svg";
 
 const Home = () => {
   // Preload critical images for the Home section
-  const criticalImages = [homeBackgroundLandscape, homeBackgroundPortrait, core_text];
+  const criticalImages = [homeBackgroundLandscapeAvif, homeBackgroundPortraitAvif, core_text];
   const { isLoading } = useImagePreloader(criticalImages);
 
   // Show minimal loading state for critical assets
@@ -27,18 +31,26 @@ const Home = () => {
   return (
     <div className="relative min-h-screen h-screen overflow-hidden bg-black">
       {/* Background image - mobile version */}
-      <img
-        src={homeBackgroundPortrait}
-        alt="Background"
-        className="absolute inset-0 w-full h-screen object-cover sm:hidden"
-      />
+      <picture className="absolute inset-0 sm:hidden">
+        <source srcSet={homeBackgroundPortraitWebp} type="image/webp" />
+        <source srcSet={homeBackgroundPortraitAvif} type="image/avif" />
+        <img
+          src={homeBackgroundPortrait}
+          alt="Background"
+          className="absolute inset-0 w-full h-screen object-cover"
+        />
+      </picture>
       {/* Background image - tablet/desktop version with shrinking mechanism */}
-      <img
-        src={homeBackgroundLandscape}
-        alt="Background"
-        className="hidden sm:block absolute inset-0 w-full h-screen sm:object-cover object-top"
-        style={{ objectFit: "fill" }}
-      />
+      <picture className="hidden sm:block absolute inset-0">
+        <source srcSet={homeBackgroundLandscapeWebp} type="image/webp" />
+        <source srcSet={homeBackgroundLandscapeAvif} type="image/avif" />
+        <img
+          src={homeBackgroundLandscape}
+          alt="Background"
+          className="absolute inset-0 w-full h-screen sm:object-cover object-top"
+          style={{ objectFit: "fill" }}
+        />
+      </picture>
 
       <div className="absolute top-0 right-0 flex flex-col sm:flex-row items-end sm:items-start gap-2 sm:gap-4 md:gap-6 pt-2 sm:pt-3 md:pt-4 pr-2 sm:pr-4 md:pr-6 z-10">
         <div className="w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 overflow-hidden flex items-start sm:-translate-y-6 md:-translate-y-8 lg:-translate-y-10 sm:translate-x-10 md:translate-x-14 lg:translate-x-16">
