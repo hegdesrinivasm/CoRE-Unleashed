@@ -68,6 +68,110 @@ img {
   filter: drop-shadow(0 0 10px rgba(232, 184, 138, 0.3));
 }
 
+.top-marquee-shell {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: var(--top-marquee-logo-clearance, 7rem);
+  z-index: 20;
+  padding: 0.5rem 0.5rem 0;
+  pointer-events: none;
+}
+
+@media (max-width: 390px) {
+  .top-marquee-shell {
+    --top-marquee-logo-clearance: 5.5rem;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    padding-top: 0.35rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .top-marquee-shell {
+    --top-marquee-logo-clearance: clamp(13rem, 29vw, 26rem);
+    padding-left: 0.75rem;
+    padding-top: 0.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-marquee-shell {
+    --top-marquee-logo-clearance: clamp(17rem, 30vw, 30rem);
+    padding-top: 0.7rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .top-marquee-shell {
+    --top-marquee-logo-clearance: clamp(21rem, 31vw, 36rem);
+    padding-top: 0.8rem;
+  }
+}
+
+.top-marquee {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(232, 184, 138, 0.45);
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, rgba(232, 184, 138, 0.16), rgba(232, 184, 138, 0.07) 45%, rgba(232, 184, 138, 0.16)),
+    rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3), inset 0 0 18px rgba(232, 184, 138, 0.14);
+}
+
+.top-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: topMarqueeScroll 18s linear infinite;
+}
+
+.top-marquee-group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.top-marquee-message {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0.5rem 1.35rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #fff;
+  font-family: 'GomariceNoContinue', sans-serif;
+  font-size: clamp(0.72rem, 2.1vw, 0.95rem);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.55);
+}
+
+.top-marquee-measure {
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (max-width: 390px) {
+  .top-marquee-message {
+    gap: 0.3rem;
+    padding: 0.42rem 1.05rem;
+    letter-spacing: 0.055em;
+    font-size: 0.66rem;
+  }
+}
+
+.top-marquee-number {
+  font-family: 'Blowbrush', sans-serif;
+  color: #E8B88A;
+  font-size: 1.3em;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
 @media (max-width: 768px) {
   .home-loading-logo {
     width: clamp(8.5rem, 42vw, 14.5rem);
@@ -223,6 +327,16 @@ img {
 
   50% {
     filter: drop-shadow(0 0 22px rgba(232, 184, 138, 0.6));
+  }
+}
+
+@keyframes topMarqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }
 

@@ -11,6 +11,7 @@ import ieee_logo from "../assets/ieee_logo.png";
 import vcet_logo from "../assets/vcet_logo.png";
 import codezync_logo from "../assets/CodeZyng_Logo.png";
 import core_text from "../assets/core_text.svg";
+import TopMarquee from "../components/TopMarquee";
 
 const Home = () => {
   // Preload critical images for the Home section
@@ -32,6 +33,8 @@ const Home = () => {
 
   return (
     <div className="relative min-h-screen h-screen overflow-hidden bg-black">
+      <TopMarquee />
+
       {/* Background image - mobile version */}
       <picture className="absolute inset-0 sm:hidden">
         <source srcSet={homeBackgroundPortraitWebp} type="image/webp" />
