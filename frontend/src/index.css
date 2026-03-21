@@ -112,6 +112,7 @@ img {
 .top-marquee {
   position: relative;
   overflow: hidden;
+  pointer-events: auto;
   border: 1px solid rgba(232, 184, 138, 0.45);
   border-radius: 999px;
   background:
@@ -126,6 +127,11 @@ img {
   display: flex;
   width: max-content;
   animation: topMarqueeScroll 18s linear infinite;
+}
+
+.top-marquee:hover .top-marquee-track,
+.top-marquee:focus-within .top-marquee-track {
+  animation-play-state: paused;
 }
 
 .top-marquee-group {
