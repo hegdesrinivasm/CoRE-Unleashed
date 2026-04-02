@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react"
 
+const marqueeText = "Registrations for CoRE Unleashed have closed! Thank you for participating!"
+
 const MarqueeMessage = () => (
   <p className="top-marquee-message">
-    Registrations now end on March
-    <span className="top-marquee-number">31st</span>
-    !
+    {marqueeText}
   </p>
 )
 
@@ -50,13 +50,11 @@ export default function TopMarquee() {
 
   return (
     <div className="top-marquee-shell">
-      <span className="sr-only">Registrations for CoRE Unleashed have closed! Thank you for participating!</span>
+      <span className="sr-only">{marqueeText}</span>
 
       <div className="top-marquee" aria-hidden="true" ref={marqueeRef}>
         <p className="top-marquee-message top-marquee-measure" ref={sampleMessageRef}>
-          Registrations now end on March
-          <span className="top-marquee-number">31st</span>
-          !
+          {marqueeText}
         </p>
 
         <div className="top-marquee-track">
