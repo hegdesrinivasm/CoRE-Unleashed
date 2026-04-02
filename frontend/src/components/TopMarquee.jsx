@@ -50,7 +50,7 @@ export default function TopMarquee() {
 
   return (
     <div className="top-marquee-shell">
-      <span className="sr-only">Registrations now end on March 31st!</span>
+      <span className="sr-only">Registrations for CoRE Unleashed have closed! Thank you for participating!</span>
 
       <div className="top-marquee" aria-hidden="true" ref={marqueeRef}>
         <p className="top-marquee-message top-marquee-measure" ref={sampleMessageRef}>

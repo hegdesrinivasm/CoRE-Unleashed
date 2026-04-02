@@ -107,21 +107,14 @@ const Home = () => {
           </h1>
         </div>
 
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 mb-4 sm:mb-6 md:mb-8 items-stretch sm:items-start">
+        {/* Button */}
+        <div className="flex mb-4 sm:mb-6 md:mb-8 items-start">
           <button
-            className="w-full sm:w-auto bg-white text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-gray-100 transition-colors"
+            className="w-full sm:w-[24rem] md:w-[30rem] lg:w-[36rem] bg-white text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-gray-100 transition-colors"
             style={{ fontFamily: "Inter", fontWeight: 700 }}
             onClick={() => window.open("https://drive.google.com/file/d/1ezkI6i7L3XjDwt-Vl_ysG9j7-ehV-IbH/view?usp=sharing", "_blank", "noopener,noreferrer")}
           >
             Download Brochure
-          </button>
-          <button
-            className="w-full sm:w-auto bg-[#E8B88A] text-black px-6 sm:px-10 md:px-14 lg:px-16 py-2.5 sm:py-3 md:py-4 lg:py-5 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl hover:bg-[#d9a87b] transition-colors"
-            style={{ fontFamily: "Inter", fontWeight: 700 }}
-            onClick={() => window.open("https://corevcet.wixsite.com/core/unleashed", "_blank", "noopener,noreferrer")}
-          >
-            Register Now
           </button>
         </div>
 
