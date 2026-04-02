@@ -54,7 +54,7 @@ const TimelineSection = () => {
                 <span className="timeline-left-text">April</span>{' '}
                 <span className="timeline-left-number">24</span><span className="timeline-left-text-suffix">th</span>{' '}
                 <span className="timeline-left-text">—</span>{' '}
-                <span className="timeline-left-number">04:00</span>{' '}
+                <span className="timeline-left-number">06:00</span>{' '}
                 <span className="timeline-left-text">PM</span>
               </div>
               <span className="timeline-dot" aria-hidden="true" />
@@ -63,19 +63,18 @@ const TimelineSection = () => {
 
             <article className="timeline-item" role="listitem">
               <div className="timeline-left">
-                <span className="timeline-left-number">05:00</span>{' '}
+                <span className="timeline-left-number">07:00</span>{' '}
                 <span className="timeline-left-text">PM</span>
               </div>
               <span className="timeline-dot" aria-hidden="true" />
               <div className="timeline-right">
-                <div className="timeline-right-title">Event Inauguration</div>
-                <div className="timeline-right-sub">(suprises in store!)</div>
+                <div className="timeline-right-title">CoRE Unleahsed Inauguration</div>
               </div>
             </article>
 
             <article className="timeline-item" role="listitem">
               <div className="timeline-left">
-                <span className="timeline-left-number">07:00</span>{' '}
+                <span className="timeline-left-number">08:00</span>{' '}
                 <span className="timeline-left-text">PM</span>
               </div>
               <span className="timeline-dot" aria-hidden="true" />
@@ -89,7 +88,7 @@ const TimelineSection = () => {
                 <span className="timeline-left-text">April</span>{' '}
                 <span className="timeline-left-number">26</span><span className="timeline-left-text-suffix">th</span>{' '}
                 <span className="timeline-left-text">—</span>{' '}
-                <span className="timeline-left-number">07:00</span>{' '}
+                <span className="timeline-left-number">08:00</span>{' '}
                 <span className="timeline-left-text">AM</span>
               </div>
               <span className="timeline-dot" aria-hidden="true" />
@@ -98,17 +97,17 @@ const TimelineSection = () => {
 
             <article className="timeline-item" role="listitem">
               <div className="timeline-left">
-                <span className="timeline-left-number">09:00</span>{' '}
+                <span className="timeline-left-number">9:00</span>{' '}
                 <span className="timeline-left-text">AM</span>
               </div>
               <span className="timeline-dot" aria-hidden="true" />
-              <div className="timeline-right timeline-right-title">Evaluation</div>
+              <div className="timeline-right timeline-right-title">Evaluation Commences</div>
             </article>
 
             <article className="timeline-item" role="listitem">
               <div className="timeline-left">
-                <span className="timeline-left-number">12:00</span>{' '}
-                <span className="timeline-left-text">PM</span>
+                <span className="timeline-left-number">11:00</span>{' '}
+                <span className="timeline-left-text">AM</span>
               </div>
               <span className="timeline-dot" aria-hidden="true" />
               <div className="timeline-right timeline-right-title">Valedictory Ceremony</div>
